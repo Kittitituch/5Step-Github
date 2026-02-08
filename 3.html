@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=720" name="viewport"/>
+<title>ขั้นตอนที่ 3: เปิดโหมดเว็บไซต์</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: 'Kanit', sans-serif;
+}
+.slide-container {
+/* width: 1280px;
+height: 720px; */
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background-color: #FFF9E6;
+position: relative;
+overflow: hidden;
+}
+.header-section {
+background-color: #7B1FA2;
+padding: 30px 60px;
+display: flex;
+align-items: center;
+gap: 25px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.step-number {
+width: 80px;
+height: 80px;
+background-color: #FFB74D;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 48px;
+font-weight: 800;
+color: white;
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+flex-shrink: 0;
+}
+.header-text {
+flex: 1;
+}
+.step-title {
+font-size: 42px;
+font-weight: 700;
+color: white;
+margin: 0;
+line-height: 1.2;
+}
+.step-subtitle {
+font-size: 28px;
+font-weight: 600;
+color: #FFE082;
+margin: 5px 0 0 0;
+}
+.content-section {
+flex: 1;
+padding: 50px 80px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.step-item {
+display: flex;
+align-items: flex-start;
+gap: 25px;
+background-color: white;
+padding: 25px 30px;
+border-radius: 20px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+border-left: 8px solid #BA68C8;
+transition: transform 0.2s;
+}
+.step-item:hover {
+transform: translateX(5px);
+}
+.step-icon {
+width: 60px;
+height: 60px;
+background-color: #F3E5F5;
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+color: #7B1FA2;
+flex-shrink: 0;
+}
+.step-content {
+flex: 1;
+}
+.step-text {
+font-size: 24px;
+font-weight: 600;
+color: #212121;
+margin: 0;
+line-height: 1.4;
+}
+.step-detail {
+font-size: 20px;
+font-weight: 400;
+color: #616161;
+margin: 8px 0 0 0;
+line-height: 1.4;
+}
+.highlight {
+color: #FF6F00;
+font-weight: 700;
+}
+.decoration-dots {
+position: absolute;
+width: 120px;
+height: 120px;
+bottom: 30px;
+right: 40px;
+opacity: 0.15;
+}
+.dot {
+width: 20px;
+height: 20px;
+background-color: #7B1FA2;
+border-radius: 50%;
+position: absolute;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-section">
+<div class="step-number">
+<p>3</p>
+</div>
+<div class="header-text">
+<p class="step-title">ขั้นตอนที่ 3: เปิดโหมดเว็บไซต์</p>
+<p class="step-subtitle">GitHub Pages</p>
+</div>
+</div>
+<div class="content-section">
+<div class="step-item">
+<div class="step-icon">
+<i class="fas fa-cog"></i>
+</div>
+<div class="step-content">
+<p class="step-text">ไปที่เมนูแถบด้านบน คลิกคำว่า <span class="highlight">Settings</span></p>
+<p class="step-detail">มองหารูปฟันเฟือง ⚙️</p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-icon">
+<i class="fas fa-bars"></i>
+</div>
+<div class="step-content">
+<p class="step-text">ที่แถบเมนูด้านซ้ายมือ มองหาหัวข้อ <span class="highlight">Code and automation</span></p>
+<p class="step-detail">แล้วคลิกที่ <span class="highlight">Pages</span></p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-icon">
+<i class="fas fa-code-branch"></i>
+</div>
+<div class="step-content">
+<p class="step-text">ในส่วนของ <span class="highlight">Build and deployment</span> ให้ดูที่หัวข้อ Branch:</p>
+<p class="step-detail">เปลี่ยนจาก <span class="highlight">None</span> ให้เป็น <span class="highlight">main</span> (หรือ master)</p>
+</div>
+</div>
+<div class="step-item">
+<div class="step-icon">
+<i class="fas fa-save"></i>
+</div>
+<div class="step-content">
+<p class="step-text">กดปุ่ม <span class="highlight">Save</span></p>
+<p class="step-detail">เว็บไซต์กำลังเตรียมตัวออนไลน์! 🚀</p>
+</div>
+</div>
+</div>
+<div class="decoration-dots">
+<div class="dot" style="top: 0; left: 0;"></div>
+<div class="dot" style="top: 0; left: 50px;"></div>
+<div class="dot" style="top: 0; left: 100px;"></div>
+<div class="dot" style="top: 50px; left: 25px;"></div>
+<div class="dot" style="top: 50px; left: 75px;"></div>
+<div class="dot" style="top: 100px; left: 0;"></div>
+<div class="dot" style="top: 100px; left: 50px;"></div>
+<div class="dot" style="top: 100px; left: 100px;"></div>
+</div>
+</div>
+</body>
+</html>
