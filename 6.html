@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, height=950" name="viewport"/>
+<title>เช็กลิสต์และข้อควรระวัง</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: 'Kanit', sans-serif;
+}
+.slide-container {
+/* width: 1280px;
+height: 950px; */
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background-color: #FFF3E0;
+position: relative;
+overflow: hidden;
+}
+.header-section {
+background-color: #D84315;
+padding: 35px 60px;
+display: flex;
+align-items: center;
+gap: 25px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.warning-icon {
+width: 85px;
+height: 85px;
+background-color: #FFE082;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 50px;
+color: #D84315;
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+flex-shrink: 0;
+}
+.header-text {
+flex: 1;
+}
+.header-title {
+font-size: 48px;
+font-weight: 800;
+color: white;
+margin: 0;
+line-height: 1.2;
+}
+.header-subtitle {
+font-size: 28px;
+font-weight: 600;
+color: #FFE082;
+margin: 5px 0 0 0;
+}
+.content-section {
+flex: 1;
+padding: 40px 80px 30px 80px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.warning-item {
+display: flex;
+align-items: flex-start;
+gap: 20px;
+background-color: white;
+padding: 20px 28px;
+border-radius: 18px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+border-left: 8px solid #FF6F00;
+}
+.check-icon {
+width: 50px;
+height: 50px;
+background-color: #FFEBEE;
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 26px;
+color: #D84315;
+flex-shrink: 0;
+margin-top: 3px;
+}
+.warning-content {
+flex: 1;
+}
+.warning-text {
+font-size: 22px;
+font-weight: 600;
+color: #212121;
+margin: 0;
+line-height: 1.4;
+}
+.success-section {
+background-color: #C8E6C9;
+padding: 25px 40px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+gap: 20px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+margin-top: 10px;
+}
+.success-icon {
+font-size: 50px;
+color: #2E7D32;
+}
+.success-text {
+flex: 1;
+font-size: 26px;
+font-weight: 700;
+color: #1B5E20;
+margin: 0;
+line-height: 1.3;
+}
+.highlight-red {
+color: #D84315;
+font-weight: 700;
+}
+.highlight-orange {
+color: #FF6F00;
+font-weight: 700;
+}
+.decoration-warning {
+position: absolute;
+bottom: 20px;
+right: 30px;
+opacity: 0.1;
+font-size: 120px;
+color: #FF6F00;
+}
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-section">
+<div class="warning-icon">
+<i class="fas fa-exclamation-triangle"></i>
+</div>
+<div class="header-text">
+<p class="header-title">เช็กลิสต์และข้อควรระวัง</p>
+<p class="header-subtitle">สำคัญมาก! ห้ามพลาด</p>
+</div>
+</div>
+<div class="content-section">
+<div class="warning-item">
+<div class="check-icon">
+<i class="fas fa-times-circle"></i>
+</div>
+<div class="warning-content">
+<p class="warning-text">อย่าลาก<span class="highlight-red">"ทั้งโฟลเดอร์"</span> ไปวาง ให้ลากเฉพาะ<span class="highlight-orange">"ไฟล์ข้างใน"</span> เท่านั้น</p>
+</div>
+</div>
+<div class="warning-item">
+<div class="check-icon">
+<i class="fas fa-file-code"></i>
+</div>
+<div class="warning-content">
+<p class="warning-text">ไฟล์ <span class="highlight-red">index.html</span> ต้องอยู่ชั้นนอกสุดของ repository</p>
+</div>
+</div>
+<div class="warning-item">
+<div class="check-icon">
+<i class="fas fa-font"></i>
+</div>
+<div class="warning-content">
+<p class="warning-text">ชื่อไฟล์ <span class="highlight-red">index.html</span> ต้องเป็นตัวพิมพ์เล็กทั้งหมด</p>
+</div>
+</div>
+<div class="warning-item">
+<div class="check-icon">
+<i class="fas fa-code-branch"></i>
+</div>
+<div class="warning-content">
+<p class="warning-text">ถ้ายังไม่เห็นลิงก์เว็บไซต์ ให้ตรวจสอบว่าตั้ง <span class="highlight-orange">Branch</span> ใน Pages เป็น <span class="highlight-red">main</span> แล้วกด Save</p>
+</div>
+</div>
+<div class="warning-item">
+<div class="check-icon">
+<i class="fas fa-sync-alt"></i>
+</div>
+<div class="warning-content">
+<p class="warning-text">ถ้าเกิดข้อผิดพลาด ให้รีเฟรชหน้าหรือรอสักครู่แล้วลองใหม่</p>
+</div>
+</div>
+<div class="success-section">
+<div class="success-icon">
+<i class="fas fa-trophy"></i>
+</div>
+<div class="success-text">
+<p>ยินดีด้วย! ตอนนี้ผลงานของนักเรียน ออนไลน์ สู่สายตาชาวโลกแล้ว 🎉</p>
+</div>
+</div>
+</div>
+<div class="decoration-warning">
+<i class="fas fa-shield-alt"></i>
+</div>
+</div>
+</body>
+</html>
